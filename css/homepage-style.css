@@ -9,10 +9,18 @@
 
 .navigation {
     padding: 30px 0;
-    background: #333333;
+    background: #111111;
     width: 100%;
     justify-content: space-around;
     display: flex;
+    height: 100px;
+}
+
+.logo {
+    background: url(../images/logo.png);
+    background-position: center;
+    background-size: cover;
+    width: 40px;
 }
 
 .icon {
@@ -37,7 +45,9 @@ li {
 }
 
 .banner {
-    background: #111111;
+    background-image: url(../images/Banner1.jpg);
+    background-size: cover;
+    background-position: right;
     height: 600px;
 }
 
@@ -52,8 +62,22 @@ li {
     font-weight: 500;
 }
 
+.textbox2 {
+    padding: 0 0 50px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.catimg {
+    width: 80%;
+}
+
+.bannerimg {
+    width: 70%;
+}
+
 .button {
-    background: #333333;
+    background: #111111;
     color: white;
     padding: 15px 30px;
     font-weight: 600;
@@ -96,6 +120,9 @@ li {
 
 .contentbox2a {
     width: 70%;
+    background: url(../images/Banner2.png);
+    background-size: cover;
+    background-position: right;
 }
 .contentbox2b {
     width: 30%;
@@ -103,11 +130,21 @@ li {
 
 .buyitem {
     height: 200px;
+    background: url(../images/product.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.aboutbox {
+    background: url(../images/aboutus.jpeg);
+    height: 800px;
+    color: white;
+    padding-top: 30px;
 }
 
 footer {
     margin-top: 150px;
-    background: #333333;
+    background: #111111;
     text-align: center;
     color: white;
 }
