@@ -7,32 +7,28 @@
     font-family: "Poppins", sans-serif;
 }
 
-
 .navigation {
-    padding: 30px 0;
     background: #111111;
     width: 100%;
-    justify-content: space-around;
     display: flex;
-    height: 100px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 80px;
 }
 
 .logo {
     background: url(../images/logo.png);
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    width: 40px;
+    width: 60px;
+    height: 100%;
 }
 
-.icon {
-    padding: 40px 15px;
-    margin: 0 20px;
-}
-
-a {
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul {
@@ -45,6 +41,23 @@ li {
     margin-right: 20px;
 }
 
+.rightmenu {
+    padding-left: 0 80px;
+}
+
+.search-field {
+    height: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
 
 .content {
     padding: 90px 130px;
@@ -59,32 +72,25 @@ li {
 .promenu {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 20px 0;
-}
-
-a {
-    text-decoration: none;
 }
 
 .promenu ul {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     list-style-type: none;
     margin-top: 1px;
 }
 
 .promenu ul li {
     margin-right: 25px;
+    padding: 0 10px;
 }
 
 .promenu ul li:hover {
-    background: #b9b9b9;
     cursor: pointer;
-}
-
-.promenu ul li b:hover {
-    background: white;
-    cursor: default;
 }
 
 .promenu ul ul {
@@ -94,34 +100,53 @@ a {
 
 .promenu ul li:hover > ul {
     display: block;
-    background: #b9b9b9;
-}
-
-.itembox {
-    display: flex;
-    justify-content: space-around;
-}
-
-.item {
-    width: 25%;
-    margin: 10px 5px;
-    border: solid;
-}
-
-.imagesize {
-    height: 200px;
-    background: url(../images/product.jpg);
-    background-position: center;
-    background-size: cover;
+    background: white;
+    border: 1px solid black;
 }
 
 .hr {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+.box-product {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.boxitem img {
+    width: 200px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+
+.boxitem {
+    border: 0.5px solid;
+    width: 250px;
+    margin: 5px;
+    transition: transform 0.3s;
+}
+
+.boxitem:hover {
+    transform: translateY(-5px);
+}
+
+.boxitem p{
+    font-weight: 600;
+    color: black;
+}
+
+.text-product {
+    text-align: start;
+    padding: 0 10px;
 }
 
 .page {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .number {
@@ -129,26 +154,40 @@ a {
     justify-content: center;
 }
 
-.page .number .promenu {
-    padding: 0;
+.number span {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid;
+    text-align: center;
+    cursor: pointer;
+    transform: color 0.3s;
 }
 
-.pd5 {
-    padding-right: 10px;
+.number span:hover {
+    background-color: black;
+    color: white;
 }
 
 .link {
     color: black;
 }
 
+.page .promenu {
+    padding: 0;
+}
+
 footer {
-    margin-top: 100px;
     background: #111111;
     text-align: center;
     color: white;
 }
 
+.foot-icon {
+    padding: 20px 0;
+}
+
 .copyright, .copyright p {
     padding: 0 10px;
     font-size: 13px;
-}   
+}
