@@ -118,6 +118,11 @@ button {
     color: #fff;
     text-transform: uppercase;
     padding: 10px 15px;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 footer {

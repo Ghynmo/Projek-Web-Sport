@@ -7,6 +7,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 .navigation {
     background: #111111;
     width: 100%;
@@ -152,7 +156,7 @@ a {
 
 .boxitem img {
     width: 200px;
-    padding-bottom: 10px;
+    padding: 10px 0;
 }
 
 .text-product {
